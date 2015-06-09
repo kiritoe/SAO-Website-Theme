@@ -1,0 +1,185 @@
+/* 
+ * Base.css
+ * A good place to start
+ * 2015-03-23
+ * 
+ * (c) 2015 George Platko
+ * This file is liscensed under Creative Commons Attribution-ShareAlike 4.0
+ * http://creativecommons.org/licenses/by-sa/4.0/
+ * (Meaning: Do what you want with this as long as you credit me and use the same liscense)
+ */
+
+/* Base elements */
+* { transition: all 200ms } /* Animate ALL the things! */
+
+html { height: 100%; }
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    
+    background: #FFF;
+    
+    font-family: "Helvetica";
+    font-size: 16px;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+pre {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    overflow: auto;
+    
+    font-family: "Menlo", monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: inherit;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.button, button {
+    display: inline-block;
+    padding: 10px;
+    
+    background: white;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+ }
+.button:hover, button:hover {
+    background: #DDD;
+    
+}
+.button:active, button:active {
+    background: #CCC;
+}
+.block.button, button.block {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    
+    background: none;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    
+    font: inherit;
+}
+input::-webkit-input-placeholder { transition: all 300ms; }
+input:-moz-placeholder { transition: all 300ms; }
+input::-moz-placeholder { transition: all 300ms; }
+input:-ms-input-placeholder { transition: all 300ms; }
+
+/* Layout elements */
+.wrap {
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.card {
+    margin: 10px 0;
+    padding: 15px;
+    
+    border: 1px solid #CCC;
+    border-radius: 10px;
+}
+.card > * {
+    margin: 10px;
+}
+
+.fullwidth {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+}
+.fullwidth .wrap {
+    padding: 10px 35px;
+}
+nav + .fullwidth {
+    border-top: none;
+}
+
+/* Navbar */
+nav {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    
+    background: white;
+    border-bottom: 1px solid #CCC;
+}
+nav .wrap {
+    padding: 0 10px;
+}
+nav ul {
+    margin: 0;
+    padding: 0 15px;
+    height: 100%;
+    
+    list-style: none;
+}
+nav li {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: inline-block;
+}
+nav a {
+    color: black;
+    display: inline-block;
+    height: 100%;
+    margin: 0;
+    margin-right: 5px;
+    padding: 10px;
+    
+    text-decoration: none;
+}
+nav a:hover {
+    background: #DDD;
+}
+nav a:active {
+    background: #CCC;
+}
+
+/* Utility classes */
+.block {
+    display: block;
+}
+.block.button {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Small screen stuff (SSS) */
+@media screen and (max-width: 399px) {
+    nav .wrap, nav ul {
+        padding: 0;
+    }
+    nav li {
+        display: block;
+    }
+    nav a {
+        margin: 0;
+        padding: 10px 35px;
+        width: calc(100% - 70px);
+    }
+}

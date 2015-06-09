@@ -59,9 +59,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
 }
 
-/* Buttons */
-.button, button {
+/* Buttons and other things */
+.button, button, input {
     display: inline-block;
+    margin: 3px 0 2px;
     padding: 10px;
     
     background: white;
@@ -89,16 +90,6 @@ button:active, .button:active, input:active, button:focus, input:focus {
 }
 .block.button, button.block {
     text-align: center;
-}
-
-input {
-    padding: 10px;
-    
-    background: none;
-    border: 1px solid #CCC;
-    border-radius: 10px;
-    
-    font: inherit;
 }
 
 /* Holy balls all the rules */
@@ -131,6 +122,8 @@ input:active:-ms-input-placeholder { color: #EEE; }
 .card {
     margin: 10px 0;
     padding: 15px;
+    
+    background: white;
 }
 .card > * {
     margin: 10px;
@@ -140,6 +133,8 @@ input:active:-ms-input-placeholder { color: #EEE; }
     width: 100%;
     margin: 0;
     padding: 20px 0;
+    
+    background: white;
 }
 .fullwidth .wrap {
     padding: 10px 35px;
@@ -151,6 +146,7 @@ nav {
     padding: 0;
     overflow: auto;
     
+    background: white;
     border-bottom: 2px solid orange;
     
     font-family: "SAO";
@@ -202,6 +198,7 @@ nav a:active {
 }
 
 /* Small screen stuff (SSS) */
+/* This breakpoint will need to be changed depending on the size of your menu */
 @media screen and (max-width: 399px) {
     nav .wrap, nav ul {
         padding: 0;

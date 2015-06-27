@@ -1,9 +1,9 @@
-/* 
+/*
  * Base.css
  * A good place to start
  * 2015-03-23
- * 
- * (c) 2015 George Platko
+ * By George Platko
+ *
  * This file is liscensed under Creative Commons Attribution-ShareAlike 4.0
  * http://creativecommons.org/licenses/by-sa/4.0/
  * (Meaning: Do what you want with this as long as you credit me and use the same liscense)
@@ -11,15 +11,16 @@
 
 /* Font styles */
 @font-face {
-    font-family: 'SAO';
-    src: url('sao-font/SAOWelcomeTT-Regular-webfont.eot');
-    src: url('sao-font/SAOWelcomeTT-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('sao-font/SAOWelcomeTT-Regular-webfont.woff2') format('woff2'),
-         url('sao-font/SAOWelcomeTT-Regular-webfont.woff') format('woff'),
-         url('sao-font/SAOWelcomeTT-Regular-webfont.ttf') format('truetype'),
-         url('sao-font/SAOWelcomeTT-Regular-webfont.svg#sao_welcome_ttregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'SAO';
+  src: url('sao-font/SAOWelcomeTT-Regular-webfont.eot');
+  src:
+    url('sao-font/SAOWelcomeTT-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('sao-font/SAOWelcomeTT-Regular-webfont.woff2') format('woff2'),
+    url('sao-font/SAOWelcomeTT-Regular-webfont.woff') format('woff'),
+    url('sao-font/SAOWelcomeTT-Regular-webfont.ttf') format('truetype'),
+    url('sao-font/SAOWelcomeTT-Regular-webfont.svg#sao_welcome_ttregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Base elements */
@@ -28,73 +29,73 @@
 html { height: 100%; }
 
 body {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 10px;
-    
-    background: #EEE;
-    
-    font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+
+  background: #EEE;
+
+  font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
 }
 
 p {
-    margin: 0;
-    margin-bottom: 10px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 pre {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 10px;
-    overflow: auto;
-    
-    font-family: "Menlo", monospace;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+  overflow: auto;
+
+  font-family: "Menlo", monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "SAO", "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: inherit;
-    margin: 0;
-    margin-bottom: 10px;
+  font-family: "SAO", "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: inherit;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 /* Buttons and other things */
 .button, button, input {
-    display: inline-block;
-    margin: 3px 0 2px;
-    padding: 10px;
-    
-    background: white;
-    border: none;
-    border-radius: 0;
-    box-shadow: 0 0 0 2px orange;
-    
-    font-family: "SAO";
-    font-size: 18px;
-    text-decoration: none;
-    color: inherit;
+  display: inline-block;
+  margin: 3px 0 2px;
+  padding: 10px;
+
+  background: white;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 0 0 2px orange;
+
+  font-family: "SAO";
+  font-size: 18px;
+  text-decoration: none;
+  color: inherit;
  }
 button:hover, .button:hover, input:hover {
-    background: orange;
-    box-shadow: none;
-    
-    color: white;
+  background: orange;
+  box-shadow: none;
+
+  color: white;
 }
 button:active, .button:active, input:active, button:focus, input:focus {
-    background: #E69500;
-    box-shadow: none;
-    outline: none;
-    
-    color: white;
+  background: #E69500;
+  box-shadow: none;
+  outline: none;
+
+  color: white;
 }
 .block.button, button.block {
-    text-align: center;
+  text-align: center;
 }
 
 /* Holy balls all the rules */
 input::-webkit-input-placeholder { transition: all 300ms; color: #666; }
-input:-moz-placeholder { transition: all 300ms; color: #666; }
+input:-moz-placeholder { transition: all 300ms; color: #666;}
 input::-moz-placeholder { transition: all 300ms; color: #666; }
 input:-ms-input-placeholder { transition: all 300ms; color: #666; }
 
@@ -113,102 +114,102 @@ input:active:-ms-input-placeholder { color: #EEE; }
 
 /* Layout elements */
 .wrap {
-    box-sizing: border-box;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 10px;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .card {
-    margin: 10px 0;
-    padding: 15px;
-    
-    background: white;
+  margin: 10px 0;
+  padding: 15px;
+
+  background: white;
 }
 .card > * {
-    margin: 10px;
+  margin: 10px;
 }
 
 .fullwidth {
-    width: 100%;
-    margin: 0;
-    padding: 20px 0;
-    
-    background: white;
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+
+  background: white;
 }
 .fullwidth .wrap {
-    padding: 10px 35px;
+  padding: 10px 35px;
 }
 
 /* Navbar */
 nav {
-    margin: 0;
-    padding: 0;
-    overflow: auto;
-    
-    background: white;
-    border-bottom: 2px solid orange;
-    
-    font-family: "SAO";
-    font-size: 18px;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+
+  background: white;
+  border-bottom: 2px solid orange;
+
+  font-family: "SAO";
+  font-size: 18px;
 }
 nav .wrap {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 nav ul {
-    margin: 0;
-    padding: 0 15px;
-    height: 100%;
-    
-    list-style: none;
+  margin: 0;
+  padding: 0 15px;
+  height: 100%;
+
+  list-style: none;
 }
 nav li {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: inline-block;
 }
 nav a {
-    color: black;
-    display: inline-block;
-    height: 100%;
-    margin: 0;
-    margin-right: 5px;
-    padding: 10px;
-    
-    text-decoration: none;
+  color: black;
+  display: inline-block;
+  height: 100%;
+  margin: 0;
+  margin-right: 5px;
+  padding: 10px;
+
+  text-decoration: none;
 }
 nav a:hover, nav li:first-of-type a {
-    background: orange;
-    color: white;
+  background: orange;
+  color: white;
 }
 nav a:active {
-    background: #E69500;
-    
-    color: white;
+  background: #E69500;
+
+  color: white;
 }
 
 /* Utility classes */
 .block {
-    display: block;
+  display: block;
 }
 .block.button {
-    max-width: 300px;
-    margin: 0 auto;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 /* Small screen stuff (SSS) */
 /* This breakpoint will need to be changed depending on the size of your menu */
 @media screen and (max-width: 399px) {
-    nav .wrap, nav ul {
-        padding: 0;
-    }
-    nav li {
-        display: block;
-    }
-    nav a {
-        margin: 0;
-        padding: 10px 35px;
-        width: calc(100% - 70px);
-    }
+  nav .wrap, nav ul {
+    padding: 0;
+  }
+  nav li {
+    display: block;
+  }
+  nav a {
+    margin: 0;
+    padding: 10px 35px;
+    width: calc(100% - 70px);
+  }
 }
